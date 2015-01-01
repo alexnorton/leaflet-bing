@@ -58,7 +58,7 @@ var baseLayers = {
 }
 
 var map = new L.Map(document.querySelector('#map'), {
-    layers: [OSLayer, CBLayer],
+    layers: [CBLayer],
     center: new L.LatLng(51.7617353,-1.2427226),
     zoom: 11
 });
