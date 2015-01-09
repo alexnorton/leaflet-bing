@@ -63,4 +63,14 @@ var map = new L.Map(document.querySelector('#map'), {
     zoom: 11
 });
 
+var onLocationFound = function(e) {
+  var radius = e.accuracy / 2;
+
+  L.circle(e.latlng, radius).addTo(map);
+}
+
+map.on('locationfound', onLocationFound);
+
+map.locate({setView: true, maxZoom: 15});
+
 L.control.layers(baseLayers).addTo(map);
