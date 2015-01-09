@@ -1,0 +1,1 @@
+This is a simple demonstration of using Ordnance Survey and Collins Bartholomew tiles from [Bing Maps](http://www.bing.com/maps/) with [Leaflet](http://leafletjs.com/).
